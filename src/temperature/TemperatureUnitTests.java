@@ -31,6 +31,13 @@ public class TemperatureUnitTests {
         assertEquals(expected, actual, 0.001);
     }
 
+    @Test
+    public void celsiusAverageCalculatorWorks() {
+        double expected = 5.0;
+        double actual = ConvertTheTemperature.getUserAverageInCelsius(10, 2);
+        assertEquals(expected, actual, 0.001);
+    }
+
 
 
 

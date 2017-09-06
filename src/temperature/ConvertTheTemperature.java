@@ -40,7 +40,7 @@ public class ConvertTheTemperature {
         userAverageInFahr = getUserAverageInFahr(fahrenheitTotal, totalNumberOfNumbersInputted);
         System.out.println("Your average in fahrenheit is " + userAverageInFahr);
 
-        userAverageInCelsius = getUserAverageInCelsus(celsiusTotal, totalNumberOfNumbersInputted);
+        userAverageInCelsius = getUserAverageInCelsius(celsiusTotal, totalNumberOfNumbersInputted);
         System.out.println("Your average in Celsius is " + userAverageInCelsius);
 
     }
@@ -55,7 +55,7 @@ public class ConvertTheTemperature {
         return userAverageInFahr;
     }
 
-    private static double getUserAverageInCelsus(double celsiusTotal, int totalNumberOfNumbersInputted) {
+    static double getUserAverageInCelsius(double celsiusTotal, int totalNumberOfNumbersInputted) {
         double celsiusAverage = (celsiusTotal / totalNumberOfNumbersInputted);
         return celsiusAverage;
     }

@@ -15,7 +15,6 @@ public class PrintMultiples {
 
         Scanner scan = new Scanner(System.in);
 
-
         System.out.println("We're going to take your magic number and print out until we reach the top number.");
 
         System.out.println("Enter your starting number: ");
@@ -34,11 +33,8 @@ public class PrintMultiples {
 
     }
 
-
-
     static int returnStartingNumber(int startingNumber) {
         return startingNumber;
-
     }
 
     static int returnUpperBound(int upperBound) {
@@ -56,13 +52,12 @@ public class PrintMultiples {
 
         StringBuilder returnMessage = new StringBuilder();
 
-
         while (temporaryNumber < upperBound) {
             System.out.print(temporaryNumber + " ");
             returnMessage.append(temporaryNumber + " ");
             temporaryNumber = temporaryNumber + stepSize;
 
-            if(numberOfIterations >= maxNumbersToPrintInOneLine-1){
+            if (numberOfIterations >= maxNumbersToPrintInOneLine - 1) {
                 System.out.println();
                 returnMessage.append("\n");
                 numberOfIterations = -1;

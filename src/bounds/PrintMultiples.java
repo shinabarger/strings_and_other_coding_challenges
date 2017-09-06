@@ -26,6 +26,10 @@ public class PrintMultiples {
         upperBound = scan.nextInt();
         returnUpperBound(upperBound);
 
+        System.out.println("Enter what number you want to increment / step up by:  ");
+        numberToStepUpWith = scan.nextInt();
+        returnStepSize(numberToStepUpWith);
+
     }
 
 
@@ -37,5 +41,9 @@ public class PrintMultiples {
 
     static int returnUpperBound(int upperBound) {
         return upperBound;
+    }
+
+    static int returnStepSize(int stepSize) {
+        return stepSize;
     }
 }

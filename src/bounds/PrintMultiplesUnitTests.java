@@ -46,6 +46,13 @@ public class PrintMultiplesUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void stepUpNumberReturnsANumber() {
+        int expected = 3;
+        int actual = PrintMultiples.returnStepSize(3);
+        assertEquals(expected, actual);
+    }
+
 
 
 }

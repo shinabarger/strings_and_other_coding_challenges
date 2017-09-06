@@ -54,10 +54,10 @@ public class PrintMultiples {
 
         StringBuilder returnMessage = new StringBuilder();
 
-        while (startingNumber < upperBound) {
-            System.out.print(startingNumber + " ");
-            returnMessage.append(startingNumber + " ");
-            startingNumber = startingNumber + stepSize;
+        while (temporaryNumber < upperBound) {
+            System.out.print(temporaryNumber + " ");
+            returnMessage.append(temporaryNumber + " ");
+            temporaryNumber = temporaryNumber + stepSize;
         }
 
         return String.valueOf(returnMessage);

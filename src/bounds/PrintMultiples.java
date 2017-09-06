@@ -51,16 +51,23 @@ public class PrintMultiples {
 
     static String printOutStepSize(int startingNumber, int upperBound, int stepSize) {
         int temporaryNumber = startingNumber;
+        int maxNumbersToPrintInOneLine = getMaxNumbersInALine();
+        int numberOfIterations = 0;
 
         StringBuilder returnMessage = new StringBuilder();
 
-        while (temporaryNumber < upperBound) {
+        while (temporaryNumber < upperBound && numberOfIterations <= maxNumbersToPrintInOneLine) {
             System.out.print(temporaryNumber + " ");
             returnMessage.append(temporaryNumber + " ");
             temporaryNumber = temporaryNumber + stepSize;
+            numberOfIterations = numberOfIterations + 1;
         }
 
         return String.valueOf(returnMessage);
 
+    }
+
+    private static int getMaxNumbersInALine() {
+        return 10;
     }
 }

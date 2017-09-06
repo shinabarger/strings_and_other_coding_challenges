@@ -67,6 +67,13 @@ public class PrintMultiplesUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testToSeeIfOnlyPrints10Numbers() {
+        String expected = "1 2 3 4 5 6 7 8 9 10 ";
+        String actual = PrintMultiples.printOutStepSize(1, 11, 1);
+        assertEquals(expected, actual);
+    }
+
 
 
 }

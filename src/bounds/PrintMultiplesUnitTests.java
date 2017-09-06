@@ -74,6 +74,16 @@ public class PrintMultiplesUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testToSeeIfOnlyPrintsOnTwoLines() {
+        String expected = "1 2 3 4 5 6 7 8 9 10 " + "\n" + "11 12 13 ";
+        String actual = PrintMultiples.printOutStepSize(1, 14, 1);
+        assertEquals(expected, actual);
+        //IT WORKS!! YES.
+    }
+
+
+
 
 
 }

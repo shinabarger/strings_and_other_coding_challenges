@@ -56,10 +56,17 @@ public class PrintMultiples {
 
         StringBuilder returnMessage = new StringBuilder();
 
-        while (temporaryNumber < upperBound && numberOfIterations <= maxNumbersToPrintInOneLine) {
+
+        while (temporaryNumber < upperBound) {
             System.out.print(temporaryNumber + " ");
             returnMessage.append(temporaryNumber + " ");
             temporaryNumber = temporaryNumber + stepSize;
+
+            if(numberOfIterations >= maxNumbersToPrintInOneLine-1){
+                System.out.println();
+                returnMessage.append("\n");
+                numberOfIterations = -1;
+            }
             numberOfIterations = numberOfIterations + 1;
         }
 

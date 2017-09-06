@@ -30,6 +30,8 @@ public class PrintMultiples {
         numberToStepUpWith = scan.nextInt();
         returnStepSize(numberToStepUpWith);
 
+        printOutStepSize(startingNumber, upperBound, numberToStepUpWith);
+
     }
 
 
@@ -45,5 +47,20 @@ public class PrintMultiples {
 
     static int returnStepSize(int stepSize) {
         return stepSize;
+    }
+
+    static String printOutStepSize(int startingNumber, int upperBound, int stepSize) {
+        int temporaryNumber = startingNumber;
+
+        StringBuilder returnMessage = new StringBuilder();
+
+        while (startingNumber < upperBound) {
+            System.out.print(startingNumber + " ");
+            returnMessage.append(startingNumber + " ");
+            startingNumber = startingNumber + stepSize;
+        }
+
+        return String.valueOf(returnMessage);
+
     }
 }

@@ -53,6 +53,20 @@ public class PrintMultiplesUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void stepUpNumberReturnsANumberInBetweenWithMultiplesAsAString() {
+        String expected = "1 ";
+        String actual = PrintMultiples.printOutStepSize(1, 2, 3);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void stepUpNumberReturnsAllNumbersInBetweenWithMultiplesAsAString() {
+        String expected = "3 5 ";
+        String actual = PrintMultiples.printOutStepSize(3, 6, 2);
+        assertEquals(expected, actual);
+    }
+
 
 
 }

@@ -24,6 +24,13 @@ public class TemperatureUnitTests {
         assertEquals(expected, actual, 0.001);
     }
 
+    @Test
+    public void fahrAverageCalculatorWorks() {
+        double expected = 5.0;
+        double actual = ConvertTheTemperature.getUserAverageInFahr(10, 2);
+        assertEquals(expected, actual, 0.001);
+    }
+
 
 
 

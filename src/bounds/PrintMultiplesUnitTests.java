@@ -31,6 +31,21 @@ public class PrintMultiplesUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void upperBoundReturnsNegative1() {
+        int expected = -1;
+        int actual = PrintMultiples.returnUpperBound(-1);
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void upperBoundReturns2() {
+        int expected = 2;
+        int actual = PrintMultiples.returnUpperBound(2);
+        assertEquals(expected, actual);
+    }
+
 
 
 }

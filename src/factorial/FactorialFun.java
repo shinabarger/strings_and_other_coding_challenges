@@ -34,12 +34,14 @@ public class FactorialFun {
 
     static int multiplyTheNumber(int userNumber) {
         int factorialOfUserNumber = 1;
+        int iterations = 1;
 
-        for (int i = 1; i <= userNumber; i++) {
-            factorialOfUserNumber = userNumber * i;
+        while(iterations <= userNumber) {
+            factorialOfUserNumber = factorialOfUserNumber * iterations;
+            iterations++;
         }
 
-        System.out.println("factorial of # is " + factorialOfUserNumber);
+        System.out.println("factorial of " + userNumber+ " is " + factorialOfUserNumber);
 
         return factorialOfUserNumber;
     }

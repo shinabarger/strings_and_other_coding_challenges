@@ -24,17 +24,21 @@ public class ConvertTheTemperature {
 
         Scanner scan = new Scanner(System.in);
 
-        while (userNumber <= -100.0) {
-            System.out.println("Enter Temp in Centigrade or <= -100.0 to quit: ");
-            userNumber = scan.nextDouble();
+        System.out.println("Enter Temp in Centigrade or <= -100.0 to quit: ");
+        userNumber = scan.nextDouble();
+
+        while (userNumber > -100.0) {
 
             System.out.println("You entered: " + userNumber + " degrees Celsius.");
+
             temperatureInFahrenheit = convertToFahrenheit(userNumber);
             System.out.println("This is " + temperatureInFahrenheit + " degrees Fahrenheit.");
+
             fahrenheitTotal = fahrenheitTotal + temperatureInFahrenheit;
             celsiusTotal = celsiusTotal + userNumber;
             totalNumberOfNumbersInputted++;
-
+            System.out.println("Enter Temp in Centigrade or <= -100.0 to quit: ");
+            userNumber = scan.nextDouble();
         }
 
         userAverageInFahr = getUserAverageInFahr(fahrenheitTotal, totalNumberOfNumbersInputted);

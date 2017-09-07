@@ -1,4 +1,4 @@
-import temperature.ConvertTheTemperature;
+import factorial.FactorialFun;
 
 public class Main {
 
@@ -6,8 +6,11 @@ public class Main {
 
         //PrintMultiples.main();
 
-        ConvertTheTemperature.main();
+        //ConvertTheTemperature.main();
 
+        //PrintAtoZFizzBuzz.main();
+
+        FactorialFun.main();
 
     }
 

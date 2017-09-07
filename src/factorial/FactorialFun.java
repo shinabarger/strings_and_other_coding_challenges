@@ -34,7 +34,6 @@ public class FactorialFun {
 
     static int multiplyTheNumber(int userNumber) {
         int factorialOfUserNumber = 1;
-        Scanner scan = new Scanner(System.in);
 
         for (int i = 1; i <= userNumber; i++) {
             factorialOfUserNumber = userNumber * i;
@@ -42,6 +41,6 @@ public class FactorialFun {
 
         System.out.println("factorial of # is " + factorialOfUserNumber);
 
-        return userNumber;
+        return factorialOfUserNumber;
     }
 }

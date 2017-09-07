@@ -17,5 +17,12 @@ public class FactorialUnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void returnsFactorialOfTwo() {
+        int expected = 4;
+        int actual = FactorialFun.multiplyTheNumber(2);
+        assertEquals(expected, actual);
+    }
+
 
 }
